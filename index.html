@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somanathan | Full-Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Somanathan</h1>
+        <p class="tagline">Web & Android Developer | Java, HTML, CSS, XML, JSON</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Web Projects</a></li>
+                <li><a href="#android">Android Projects</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="https://via.placeholder.com/200" alt="Profile picture of Somanathan">
+                <div class="about-text">
+                    <p>Hello! I am <strong>Somanathan</strong>, a passionate **Web & Android developer**. I have experience building interactive websites using HTML, CSS, JavaScript, and JSON, as well as developing Android applications using Java and XML. I love creating user-friendly, responsive designs and learning new technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+            <h2>My Development Demo</h2>
+            <div class="video-container">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+                <div class="video-description">
+                    <h3>Demo Project Walkthrough</h3>
+                    <p>This video demonstrates some of my key web development projects, showing responsive landing pages, interactive forms, and a simple Android app interface. I use Java, XML, HTML, CSS, and JSON to build both web and mobile applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Projects Section -->
+        <section id="projects">
+            <h2>Web Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Landing Page 1</h3>
+                    <p>A responsive landing page built with HTML, CSS, and JS.</p>
+                    <button onclick="showAlert('Landing Page 1 clicked!')">View Project</button>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Interactive personal portfolio showcasing web projects.</p>
+                    <button onclick="showAlert('Portfolio Website clicked!')">View Project</button>
+                </div>
+                <div class="project-card">
+                    <h3>Interactive Form</h3>
+                    <p>A JavaScript form with validation and dynamic feedback.</p>
+                    <button onclick="showAlert('Interactive Form clicked!')">View Project</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Android Projects Section -->
+        <section id="android">
+            <h2>Android Projects</h2>
+            <div class="android-grid">
+                <div class="android-card">
+                    <h3>Todo App</h3>
+                    <p>Android app built with Java & XML to manage tasks efficiently.</p>
+                </div>
+                <div class="android-card">
+                    <h3>Calculator App</h3>
+                    <p>Basic calculator app demonstrating Android UI & logic.</p>
+                </div>
+                <div class="android-card">
+                    <h3>Weather App</h3>
+                    <p>App fetching weather data via JSON APIs in Android.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <div class="hobbies-grid">
+                <div>
+                    <h3>Favorite Hobbies (Ordered)</h3>
+                    <ol>
+                        <li>Reading</li>
+                        <li>Gaming</li>
+                        <li>Traveling</li>
+                        <li>Photography</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Other Hobbies (Unordered)</h3>
+                    <ul>
+                        <li>Cooking</li>
+                        <li>Painting</li>
+                        <li>Gardening</li>
+                        <li>Music</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Somanathan | Full-Stack Developer Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
